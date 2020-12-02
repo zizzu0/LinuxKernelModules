@@ -11,7 +11,7 @@
 * function is executed with that struct as parameter.
 * The saved value of the instruction pointer in regs->ip, is the address of probed function + 1.
 * A kprobe on kallsyms_lookup_name can read the address in the handler function.
-* Internally register_kprobe calls kallsyms_lookup_name, which is visible dor this code, so,
+* Internally register_kprobe calls kallsyms_lookup_name, which is visible for this code, so,
 * planting a second kprobe, allow us to get the address of kallsyms_lookup_name without waiting
 * and then we can call this address via a function pointer, to use kallsyms_lookup_name in our module.
 *
