@@ -97,3 +97,5 @@ module_exit(m_exit);
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("zizzu");
+
+EXPORT_SYMBOL(kln_pointer);
